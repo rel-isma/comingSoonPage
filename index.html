@@ -165,7 +165,7 @@
 <body>
     <div class="container">
         <div class="image-container">
-            <img src="ping.png" alt="Ping Pong Player" />
+            <img id="dynamic-image" src="ping.png" alt="Ping Pong Player" />
         </div>
         <div class="content">
             <h1><span class="highlight">Stay Tuned!</span> Our Ping Pong Game is <span class="highlight">Coming Soon!</span></h1>
@@ -211,5 +211,19 @@
             </div>
         </div>
     </div>
+    <!-- Add JavaScript to change the image based on screen width -->
+    <script>
+        function changeImage() {
+            const img = document.getElementById('dynamic-image');
+            if (window.innerWidth >= 1500) {
+                img.src = 'pingpong2.png'; // Change to the desired image when the screen is larger
+            } else {
+                img.src = 'ping.png'; // Default image
+            }
+        }
+
+        window.onload = changeImage;
+        window.onresize = changeImage;
+    </script>
 </body>
 </html>
