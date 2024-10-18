@@ -17,7 +17,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background-color: #0a192f;
             color: #fff;
         }
         .container {
@@ -30,7 +30,7 @@
             width: 100%;
             height: 40vh;
             overflow: hidden;
-            box-shadow: 0 1px 15px #fc0026;
+            box-shadow: 0 1px 15px rgba(252, 0, 38, 0.7);
         }
         .image-container img {
             width: 100%;
@@ -54,11 +54,11 @@
             font-weight: 100;
         }
         .highlight {
-            color: #fc0026;
+            color: #ff3e3e;
             font-weight: bold;
         }
         .blue {
-            color: #006dff;
+            color: #64ffda;
             font-weight: bold;
         }
         p {
@@ -75,8 +75,8 @@
         }
         .team-member {
             text-align: center;
-            background-color: #F4EFEB;
-            color: #000;
+            background-color: #172a45;
+            color: #ccd6f6;
             padding: 15px;
             border-radius: 10px;
             width: 85%;
@@ -95,7 +95,7 @@
         .team-member p {
             margin: 7px 0;
             font-size: 1.3em;
-            color: #4E4D75;
+            color: #8892b0;
         }
         .social-icons {
             margin-top: 10px;
@@ -109,6 +109,12 @@
             width: 35px;
             height: 35px;
             margin: 0 5px;
+            filter: invert(80%) sepia(5%) saturate(1000%) hue-rotate(169deg) brightness(103%) contrast(97%);
+            transition: filter 0.3s ease;
+        }
+        
+        .social-icons img:hover {
+            filter: invert(80%) sepia(5%) saturate(1000%) hue-rotate(169deg) brightness(130%) contrast(97%);
         }
         
         @media (min-width: 1024px) {
@@ -145,20 +151,6 @@
             }
             p {
                 font-size: 1.8em;
-            }
-            .team-member {
-                width: calc(33.33% - 20px);
-            }
-        }
-        @media (min-width: 1024px) {
-            h1 {
-                font-size: 4.5em;
-            }
-            .content h2 {
-                font-size: 3em;
-            }
-            p {
-                font-size: 2em;
             }
             .team-member {
                 width: calc(33.33% - 20px);
@@ -208,14 +200,13 @@
                     <div class="social-icons">
                         <a href="https://github.com/mhidoxox" target="_blank" >  <img src="github.svg" alt="GitHub" />
                         </a>
-                        <a href="https://www.linkedin.com/in/el-mahdi-farhat-2461b0284/" target="_blank" >  <img src="linkedin.svg" alt="LinkedIn" />
+                        <href="https://www.linkedin.com/in/el-mahdi-farhat-2461b0284/" target="_blank" >  <img src="linkedin.svg" alt="LinkedIn" />
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Add JavaScript to change the image based on screen width -->
     <script>
         function changeImage() {
             const img = document.getElementById('dynamic-image');
