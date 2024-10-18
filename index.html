@@ -106,7 +106,21 @@
             height: 35px;
             margin: 0 5px;
         }
-
+        
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 4.5em;
+            }
+            .content h2 {
+                font-size: 3em;
+            }
+            p {
+                font-size: 2em;
+            }
+            .team-member {
+                width: calc(33.33% - 20px);
+            }
+        }
         @media (min-width: 1500px) {
             .container {
                 flex-direction: row;
@@ -114,7 +128,6 @@
             .image-container {
                 width: 50%;
                 height: 100vh;
-
             }
             .content {
                 width: 70%;
